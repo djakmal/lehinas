@@ -1,0 +1,541 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+}
+.container{
+    width: 1296px;
+}
+header{
+    height: 70px;
+    background-color: white;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+}
+
+.col-md-1 i{
+    font-size: 55px;
+    margin:6px;
+    color:rgb(6, 6, 247)
+}
+.header_menu_wrapper{
+    padding-top:2px;
+}
+.header_menu{
+    padding:0;
+    margin:17px;
+    list-style: none;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu_li{
+    margin-left: 60px;
+    
+}
+
+.menu_link{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    color:#111f3c;
+}
+
+.row{
+    position: relative;
+}
+
+.search{
+    position: absolute;
+    top:53%;  
+    transform: translateY(-50%);
+    left: 130%;
+}
+
+.search i{
+    font-size: 20px;
+}
+.wrapper{
+    display:flex;
+    align-items: center;
+}
+.log-in{
+    height: 70%;
+    display: flex;
+    align-items: center;
+    padding: 17px 58px;
+    border: 2px solid #ffded3;
+    border-radius: 100px;
+   
+}
+.log-in a{
+    justify-content: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fc5e39;
+}
+
+
+nav{
+    min-height: 500px;
+    padding: 150px;
+    background: url(https://storage-api.petstory.ru/resize/1600x1200x80/4e/ba/a6/4ebaa69fc7134f51ba73bb6ca5ea0bd6.jpeg) center center/ cover no-repeat;
+    
+}
+
+.header{
+    text-align: center;
+    font-weight: 400;
+    font-size: 50px;
+    color:white;
+}
+.window{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: 99999;
+    display:none;
+    transition: 0.5s all;
+}
+
+.window:target{
+    display:block;
+
+}
+
+.window-wrapper{
+    width: 500px;
+    min-height: 400px;
+    position: relative;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0px 0px 20px 2px;
+    padding:50px 50px;
+}
+
+.email{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.more_email{
+    color:#656881;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.input_wrapper{
+    height: 100px;
+    margin:0 auto;
+    padding: 0 55px;
+}
+
+.input_label{
+    width: 100%;
+    display: block;
+    border: 1px solid #fc5e39;
+    box-sizing: border-box;
+    border-radius: 10px;
+    height: 60%;
+    padding-left: 15px;
+}
+
+.continue{
+    display: flex;
+    justify-content: center;
+    background-color:#fc5e39;
+    height: 60px;
+    align-items: center;
+    border-radius: 30px;
+    width: 300px;
+    margin:0 auto;
+}
+.continue a{
+    color:white;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+
+}
+
+.close{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:3%;
+    right: 3%;
+    width: 10px;
+    height: 10px;
+    /* border: 1px solid #fc5e39; */
+    padding: 15px;
+    /* border-radius: 100%; */
+    /* background-color: rgba(0,0,0,.1); */
+}
+.close:hover{
+    transform: rotate(360deg);
+    transition: 1s all;
+}
+
+
+.close a{
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 700;
+}
+nav{
+    position: relative;
+}
+.nav{
+    border-top: 1px solid white;
+    padding: 0 20px;
+    padding-top: 5px;
+    position: absolute;
+    bottom:-285px;
+    width: 1140px;
+
+}
+
+.cats_menu{
+    display:block;
+    text-align: center;
+    
+}
+
+.cats_menu_item{
+    display: inline-block;
+    padding:0 30px;
+    list-style: none;
+}
+.cats_menu_link{
+    text-decoration: none;
+    font-size: 20px;
+    color:white;
+}
+.cats_menu_link:hover{
+    color:#ff5c00;
+    transition: 0.5s all;
+}
+
+main{
+    padding: 50px 90px 20px 90px;
+    background-color: #eff2f7;
+}
+
+.cats_types{
+    min-height: 150px;
+
+}
+.wrapper_cats{
+    display:flex;
+    align-items: center;
+
+}
+.icon i{
+    font-size: 48px;
+}
+.icon-mini a{
+    display: block;
+    text-decoration: none;
+    color:#111;
+    font-size: 25px;
+    margin-top: 8px;
+    margin-left: 15px;
+}
+.cats_h{
+    font-size: 48px;
+    margin:0;
+    margin-left: 20px;
+}
+
+.wrapper_cats:hover .icon{
+    color: #ff5c00;
+}
+
+.wrapper_cats:hover .cats_h{
+    color: #ff5c00;
+}
+.types_wrapper{
+    margin-top:10px;
+    background-color: #fff;
+    min-height: 170px;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.types{
+    display:flex;
+    justify-content: space-between;
+    background-color: #fff;
+}
+.cats_from_types{
+    display:flex;
+    flex-direction: column;
+
+    background-color: white;
+    max-width: 126px;
+    max-height: 141px;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    padding:0 10px;
+}
+
+.cats_from_types .text{
+    font-size: 12px;
+    width: 116px;
+    color:#111;
+}
+.cats_from_types:hover .text{
+   color: #ff5c00;
+   text-decoration: underline;
+}
+
+.cats_from_types img{
+    max-height: 80px;
+    max-width: 80px;
+    margin:0 18px;
+    margin-bottom: 13px;
+}
+
+.cats_from_types .icon_to_cats{
+    font-size: 40px;
+    margin:15px
+}
+
+.cats_from_types .icon_to_cats i{
+    color: #b3bdb7;
+    font-size: 37px;
+}
+.wrapper_cate_more{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: #b3bdb7;
+
+}
+.types_80{
+    text-decoration: none;
+    color: #b3bdb7;
+}
+.types_80:hover{
+    color:#ff5c00;
+    
+}
+
+.wrapper_cate_more{
+    color: #b3bdb7;
+    
+}
+.cats_from_types:hover{
+    color:#ff5c00;
+}
+.cats_from_types:hover .types_80{
+    color:#ff5c00;
+}
+.cats_from_types:hover i{
+    color:#ff5c00;
+}
+
+.section_wrapper{
+    border-radius: 4px;
+
+}
+.all_about1{
+    background: url(https://storage-api.petstory.ru/resize/900x600x70/98/6c/11/986c118b531143fc936e7047dcbf12c2.jpeg) center center / cover no-repeat;
+}
+.all_about2{
+    background: url(https://storage-api.petstory.ru/resize/900x600x70/7e/b1/9d/7eb19d442f4c47bc90e41d639f3b47cc.jpeg) center center / cover no-repeat;
+}
+.all_about3{
+    background: url(https://storage-api.petstory.ru/resize/900x600x70/ad/26/f4/ad26f4f7cb4c48a68c112c5792bbd687.jpeg) center center / cover no-repeat;
+}
+.wrapper_about{
+    display:flex;
+    align-items: center;
+
+}
+.wrapper_about:hover{
+    color: #ff5c00;
+    text-decoration: underline;
+}
+.section_wrapper{
+    background-color: #fff;
+    height: 350px;
+
+}
+.section_img{
+    border-radius: 4px;
+    width: 100%;
+    height: 160px;
+
+}
+.section_wrapper:hover .section_img{
+    transform: scale(103%);
+    transition: 0.5s all;
+}
+.section_a:hover{
+    color: #ff5c00;
+    text-decoration: underline;
+}
+.section_about{
+    height: 190px;
+    position: relative;
+    padding:24px;
+    display: flex;
+    flex-direction: column;   
+}
+
+.section_about span{
+    display: block;
+    margin-top: 20px;
+}
+
+.section_a{
+
+    display: block;
+    text-decoration: none;
+    color:#000;
+    font-size: 19px;
+    font-weight: bold;
+}
+section{
+    margin-bottom: 20px;
+}
+.health1{
+    background: url(https://storage-api.petstory.ru/resize/900x600x70/86/a0/8a/86a08afd36c949dd983a20994277279d.jpeg) center center / cover no-repeat;
+}
+.health2{
+    background: url(https://storage-api.petstory.ru/resize/900x600x70/3e/95/a9/3e95a97fbec9400488af066279dd844d.jpeg) center center / cover no-repeat;
+}
+.health3{
+    background: url(https://storage-api.petstory.ru/resize/900x600x70/a1/21/e9/a121e902cfde48f0a7f1f57dcc013db2.jpeg) center center / cover no-repeat;
+}
+
+.food1{
+    background: url(https://storage-api.petstory.ru/resize/900x600x70/63/97/8f/63978fbc3a414b168ef83ed8f0f8d661.jpeg) center center / cover no-repeat;
+}
+.food2{
+    background: url(https://storage-api.petstory.ru/resize/900x600x70/f2/bb/17/f2bb17712f504a6ea68e7641e08664a8.jpeg) center center / cover no-repeat;
+}
+.food3{
+    background: url(https://storage-api.petstory.ru/resize/900x600x70/16/11/36/1611361f96744d678ef93d7ab53709b4.jpeg) center center / cover no-repeat;
+}
+
+footer{
+    padding: 30px 30px;
+    padding-left: 50px;
+    background-color: #e4ecf7;
+    display: flex;
+    height: 100px;
+}
+
+.social_media_wrapper{
+    width: 33%;
+}
+.social_media{
+    height: 100%;
+    width: 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social_icons{
+    background-color: #ffffff;
+    text-decoration: none;
+    border-radius: 100%;
+    width: 32px;
+    height: 32px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social_media i{
+    color:white;
+}
+
+
+.footer_menu_wrapper{
+    width: 33%;
+}
+
+.footer_menu a{
+    text-decoration: none;
+}
+
+.three_items{
+    color: #070716;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+
+
+.three_items_wrapper{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.mailing_wrapper{
+    width:33%;
+    display: flex;
+    justify-content: flex-end;
+}
+.mailing_form_wrapper{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.mailing_form_h{
+    position: absolute;
+    color: #111f3c;
+    font-size: 15px;
+    top:-18px;
+}
+.mailing_form_box{
+    display: flex;
+    position: absolute;
+    bottom: -15px;
+    left: -10px;
+}
+
+.mailing_label{
+    padding-top: 2px;
+    padding-left: 14px;
+    border: 1px solid #ced1df;
+    border-radius: 4px 0 0 4px;
+    height: 24px;
+}
+.mailing_label_right{
+    text-align: center;
+    width: 150px;
+    height:24px;
+    border-radius: 0 4px 4px 0;
+    display: block;
+    font-size: 14px;
+    background: #fc5e39;
+    text-decoration: none;
+    color: white;
+}
+.mailing_label_right:hover{
+    text-decoration: none;
+    color: #fff;
+}
